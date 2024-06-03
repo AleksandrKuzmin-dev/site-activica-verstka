@@ -204,7 +204,18 @@ body::-webkit-scrollbar {
         border: 1px solid #c3c3c3;
         border-radius: 100px;
         background: #e1e1e1;
+
+        transition: 0.3s;
+        &:hover {
+            background: #F9F9F9;
+        }
+
+        &:focus {
+            background: #F9F9F9;
+            outline: none;
+        }
     }
+
 
     &__form-btn {
         font-weight: 400;
@@ -819,6 +830,11 @@ body::-webkit-scrollbar {
         opacity: 1 !important;
         box-shadow: -2px 0 5px 0 rgba(0, 0, 0, 0.5);
         background: #fff;
+        transform: 0.3s;
+
+        &:hover {
+            background: #EDEDED;
+        }
     }
 
     &__slider-arrow svg {
@@ -901,6 +917,16 @@ body::-webkit-scrollbar {
         border: 1px solid #c3c3c3;
         border-radius: 100px;
         background: #e1e1e1;
+
+        transition: 0.3s;
+        &:hover {
+            background: #F9F9F9;
+        }
+
+        &:focus {
+            background: #F9F9F9;
+            outline: none;
+        }
     }
 
     &__form-btn {
@@ -1940,11 +1966,7 @@ body::-webkit-scrollbar {
 
     .map {
         &__title {
-            position: static;
-            left: unset;
-            top: unset;
-            transform: unset;
-            margin-bottom: 15px;
+            width: 320px;
         }
     }
 

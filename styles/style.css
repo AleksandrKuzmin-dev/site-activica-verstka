@@ -372,6 +372,15 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #c3c3c3;
   border-radius: 100px;
   background: #e1e1e1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.modal-call__form-input:hover {
+  background: #F9F9F9;
+}
+.modal-call__form-input:focus {
+  background: #F9F9F9;
+  outline: none;
 }
 .modal-call__form-btn {
   font-weight: 400;
@@ -983,6 +992,11 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-shadow: -2px 0 5px 0 rgba(0, 0, 0, 0.5);
           box-shadow: -2px 0 5px 0 rgba(0, 0, 0, 0.5);
   background: #fff;
+  -webkit-transform: 0.3s;
+          transform: 0.3s;
+}
+.works__slider-arrow:hover {
+  background: #EDEDED;
 }
 .works__slider-arrow svg {
   fill: #32CEB8;
@@ -1054,6 +1068,15 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #c3c3c3;
   border-radius: 100px;
   background: #e1e1e1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.cta__form-input:hover {
+  background: #F9F9F9;
+}
+.cta__form-input:focus {
+  background: #F9F9F9;
+  outline: none;
 }
 .cta__form-btn {
   font-weight: 400;
@@ -1960,12 +1983,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
   }
   .map__title {
-    position: static;
-    left: unset;
-    top: unset;
-    -webkit-transform: unset;
-            transform: unset;
-    margin-bottom: 15px;
+    width: 320px;
   }
   .cta__wrapper {
     padding: 40px 20px;

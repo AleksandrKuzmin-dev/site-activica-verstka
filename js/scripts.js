@@ -167,3 +167,37 @@ function setModal(triggerSelector, modalSelector, closeSelector, timerValue) {
         }, timerValue);
     };
 };
+
+
+function setFilters(btnFiltersSelector, btnActiveFilterSelector, imagesSelector) {
+    const buttons = document.querySelectorAll(btnFiltersSelector);
+    const images = document.querySelectorAll(imagesSelector);
+
+    let currentFilter = 'all';
+    let lastActiveBtn = buttons[0];
+
+    images.forEach(img => {
+        img.classList.add('fadeOutFromNone');
+    })
+
+    const changeCurrentFilter = (e) => {
+        lastActiveBtn.classList.remove(btnActiveFilterSelector);
+        e.target.classList.add(btnActiveFilterSelector);
+        
+        lastActiveBtn = e.target;
+        currentFilter = e.target.getAttribute('data-tab-category');
+
+        images.forEach(img => {
+            const category = img.getAttribute('data-tab-category');
+
+            currentFilter === category || currentFilter === 'all' ? img.classList.remove('none') : img.classList.add('none');
+        })
+    }
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', changeCurrentFilter);
+    })
+
+
+
+}
